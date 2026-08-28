@@ -24,7 +24,7 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. 生成最常用語言卡片（甜甜圈圖表 + 隱藏 Jupyter Notebook）
+      # 2. 生成最常用語言卡片（已加上 &hide=Jupyter%20Notebook 過濾）
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
         with:
